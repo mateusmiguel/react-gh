@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
-import light from "./styles/themes/light"
-import dark from "./styles/themes/dark"
+import light from "./styles/themes/light";
+// import dark from "./styles/themes/dark";
 import GlobalStyle from "./styles/global";
 import Navigation from "./components/Navigation";
 import Error from "./components/Error";
@@ -16,7 +16,7 @@ export const Container = styled.div`
 
 const App = () => {
   return (
-    <ThemeProvider theme={dark}>
+    <ThemeProvider theme={light}>
       <BrowserRouter>
         <GlobalStyle />
         <Navigation />
